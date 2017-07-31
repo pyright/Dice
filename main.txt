@@ -1,0 +1,63 @@
+
+/*This program rolls dice.
+
+
+By Michael E. Campos
+Last modified on 19 July 2017 at 1600
+
+
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//////////////
+//START MAIN//
+//////////////
+int main(int argc, char* argv[]) {
+
+	/////////////////////////
+	//Get Initial Variables//
+	/////////////////////////
+
+	// check command line
+	if (argc != 1) {
+		fprintf(stderr, "usage: %s num_dice_sizes\n", argv[0]); //#######################
+		exit(-1);
+	}
+
+	// check num_dice_sizes
+	const int num_dice_sizes = atoi(argv[1]);
+	if (num_dice_sizes < 1) { //Needs better checks. Check if !NULL
+		fprintf(stderr, "error: num_dice_sizes must be >= 1\n");
+		exit(-1);
+	}
+
+	// get num_rolls, dice_roof, and dice_floor for each dice size
+	for (int i = 0; i < num_dice_sizes; i++) {
+		//get num_rolls
+		//get dice_roof, get dice_floor
+	}
+
+
+
+
+
+
+
+
+
+	int dice_floor[num_dice_sizes];
+	int dice_roof[num_dice_sizes];
+
+
+
+
+
+
+
+
+} // END MAIN
